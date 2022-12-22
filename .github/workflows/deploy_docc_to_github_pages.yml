@@ -17,7 +17,8 @@ jobs:
           --target TestingDocC \
           --disable-indexing \
           --output-path ./docs \
-          --transform-for-static-hosting
+          --transform-for-static-hosting \
+          --hosting-base-path TestingDocC
       - uses: actions/upload-pages-artifact@v1
         with:
           path: docs
