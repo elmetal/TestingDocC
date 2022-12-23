@@ -22,6 +22,9 @@ let package = Package(
         .target(
             name: "TestingDocC",
             dependencies: []),
+        .target(
+            name: "AnotherTarget",
+            dependencies: []),
         .testTarget(
             name: "TestingDocCTests",
             dependencies: ["TestingDocC"]),
