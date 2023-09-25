@@ -5,4 +5,4 @@ Document for Testing `.docc` Directory.
 This file is indexed in `Articles`.
 
 ## TestingArticle
-See [TestingArticle](testingarticle.md).
+See [TestingArticle](TestingArticle.md).
