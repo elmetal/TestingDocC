@@ -1,5 +1,5 @@
 /// A cat.
-public struct Cat {
+public struct Cat: Animal {
     /// The name of the cat.
     public let name: String
 
