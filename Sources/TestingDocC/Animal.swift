@@ -1,5 +1,5 @@
 /// An animal.
-protocol Animal {
+public protocol Animal {
     /// The name of the animal.
     var name: String { get }
 
