@@ -11,6 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Install development Swift
+        uses: SwiftyLab/setup-swift@latest
+        with:
+          development: true
+          check-latest: true
+          cache-snapshot: false
       - name: build docc
         run: |
           swift package --allow-writing-to-directory ./docs generate-documentation \
