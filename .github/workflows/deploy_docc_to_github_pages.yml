@@ -14,7 +14,9 @@ jobs:
       - name: build docc
         run: |
           swift package --allow-writing-to-directory ./docs generate-documentation \
+          --enable-experimental-combined-documentation \
           --target TestingDocC \
+          --target AnotherTarget \
           --disable-indexing \
           --output-path ./docs \
           --transform-for-static-hosting \
