@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Install development Swift
         uses: SwiftyLab/setup-swift@latest
         with:
@@ -27,7 +27,7 @@ jobs:
           --output-path ./docs \
           --transform-for-static-hosting \
           --hosting-base-path TestingDocC
-      - uses: actions/upload-pages-artifact@v2
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: docs
   deploy:
@@ -42,5 +42,5 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
 
